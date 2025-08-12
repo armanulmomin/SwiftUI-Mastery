@@ -13,7 +13,8 @@ struct BackgroundAndOverlayBootcamp: View {
             .background(Color.red)
             .overlay(
                 Circle()
-                    .fill(Color.gray)
+                    .fill(Color.gray).opacity(0.5)
+                
             )
     }
 }
