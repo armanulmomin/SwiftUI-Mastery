@@ -45,6 +45,7 @@ struct StaticTextBootcamp: View {
                 .font(.largeTitle)
                 .multilineTextAlignment(alignment)
                 .frame(width: 300)
+                .padding(10)
         }
         //How to format text inside text views
     }
