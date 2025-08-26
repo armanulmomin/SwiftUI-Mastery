@@ -24,6 +24,17 @@ struct BackgroundAndOverlayBootcamp: View {
                     .fill(Color.gray).opacity(0.5)
                 
             )
+        Spacer()
+        
+        Text("Custom Overlay")
+                        .font(.title2)
+                        .padding()
+                        .background(Color.green)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.black, lineWidth: 3)
+                                .padding(5)
+                        )
     }
 }
 
