@@ -14,10 +14,20 @@ struct TextViewBootcamp: View {
             .fontWeight(.bold)
             .italic()
             .strikethrough()
+            .underline(true, color: .blue)
             .baselineOffset(-50)
             .kerning(10)
+            .tracking(5)
             .multilineTextAlignment(.leading)
             .foregroundStyle(.red)
+            .lineSpacing(15)
+            .padding()
+            .background(Color.yellow.opacity(0.3))
+            .cornerRadius(12)
+            .shadow(radius: 5)
+            .rotationEffect(.degrees(-5))
+            .frame(width: 300)
+
             
         
     }
