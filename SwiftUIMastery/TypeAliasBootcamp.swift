@@ -7,29 +7,55 @@
 
 import SwiftUI
 
-struct MoviewModel{
+// MARK: - Model
+struct MovieModel {
     let title: String
     let director: String
-    let count: Int
+    var count: Int
 }
 
-typealias TVModel = MoviewModel
+// TVModel is just another name for MovieModel
+typealias TVModel = MovieModel
 
-
+// MARK: - View
 struct TypeAliasBootcamp: View {
-   // @State var item: MoviewModel = MoviewModel(title: "Title", director: "Joe", count: 5)
-    @State var item: TVModel = TVModel(title: "Title", director: "Emily", count: 10)
+    @State private var item: TVModel = TVModel(title: "My Show", director: "Emily", count: 10)
+    @State private var message: String = ""
     
     var body: some View {
-        VStack{
+        VStack(spacing: 20) {
             Text(item.title)
-            Text(item.director)
-            Text("\(item.count)")
+                .font(.title2)
+                .bold()
+            Text("Director: \(item.director)")
+            Text("Count: \(item.count)")
+                .foregroundColor(.blue)
+            
+            HStack {
+                Button("Increase") {
+                    item.count += 1
+                    message = "You increased the count!"
+                }
+                .buttonStyle(.borderedProminent)
+                
+                Button("Reset") {
+                    item.count = 0
+                    message = "Count reset."
+                }
+                .buttonStyle(.bordered)
+            }
+            
+            if !message.isEmpty {
+                Text(message)
+                    .foregroundColor(.green)
+                    .font(.subheadline)
+            }
         }
-        
+        .padding()
     }
 }
 
 #Preview {
     TypeAliasBootcamp()
 }
+
