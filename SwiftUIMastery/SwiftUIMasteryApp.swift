@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIMasteryApp: App {
     var body: some Scene {
         WindowGroup {
-            ChangingTextView()
+            GridView()
         }
     }
 }
