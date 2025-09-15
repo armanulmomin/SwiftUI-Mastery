@@ -8,26 +8,34 @@
 import SwiftUI
 
 struct GridView: View {
-    var arr = ["Item 1","Item 2","Item 3","Item 4","Item 5","Item 6"]
-    let column = [
-        GridItem(.flexible()),
-        GridItem(.flexible()),
-        GridItem(.flexible())
+    let arr = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight"]
+    let columns = [
+        GridItem(.flexible(), spacing: 16),
+        GridItem(.flexible(), spacing: 16)
     ]
+    
     var body: some View {
-        
-        LazyVGrid(columns: column) {
-            ForEach(arr, id: \.self) { item in
-                Text(item)
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
+        ScrollView {
+            LazyVGrid(columns: columns, spacing: 16) {
+                ForEach(arr, id: \.self) { item in
+                    Text(item)
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity, minHeight: 80) // Makes boxes equal size
+                        .background(Color.blue)
+                        .cornerRadius(12)
+                        .shadow(radius: 5)
+                        .onTapGesture {
+                            print("\(item) tapped!")
+                        }
+                }
             }
+            .padding()
         }
-        
     }
 }
+
 
 #Preview {
     GridView()
