@@ -9,20 +9,15 @@ import SwiftUI
 
 struct ImagePractise: View {
     var body: some View {
-        HStack{
-            Image(systemName: "figure.american.football")
-                .resizable()
-                .frame(width: 100,height: 100)
-                .foregroundStyle(.blue)
-            Image(systemName: "figure.american.football")
-                .resizable()
-                .frame(width: 100,height: 100)
-                .foregroundStyle(.purple)
-            Image(systemName: "figure.american.football")
-                .resizable()
-                .frame(width: 100,height: 100)
-                .foregroundStyle(.indigo)
+        HStack {
+            ForEach([Color.blue, Color.purple, Color.indigo], id: \.self) { color in
+                Image(systemName: "figure.american.football")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .foregroundStyle(color)
+            }
         }
+
     }
 }
 
