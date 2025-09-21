@@ -11,6 +11,8 @@ struct GridView: View {
     let arr = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight"]
     let columns = [
         GridItem(.flexible(), spacing: 16),
+        GridItem(.flexible(), spacing: 16),
+        GridItem(.flexible(), spacing: 16),
         GridItem(.flexible(), spacing: 16)
     ]
     
