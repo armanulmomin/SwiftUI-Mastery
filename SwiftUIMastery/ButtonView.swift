@@ -9,44 +9,34 @@ import SwiftUI
 
 struct ButtonView: View {
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 24) {
             
-            // Basic Button
+            // Basic Button with Feedback
             Button("Tap Me") {
                 print("Button tapped!")
             }
-            .buttonStyle(.bordered)
+            .buttonStyle(.borderedProminent)
+            .tint(.indigo)
+            .controlSize(.large)
             
-            // Custom Styled Button
+            // Custom Gradient Button
             Button(action: {
                 print("Custom styled button tapped!")
             }) {
                 Text("Custom Style")
                     .font(.headline)
-                    .padding()
                     .frame(maxWidth: .infinity)
-                    .background(Color.blue)
+                    .padding()
+                    .background(
+                        LinearGradient(
+                            colors: [.blue, .purple],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
                     .foregroundColor(.white)
-                    .cornerRadius(12)
-                    .shadow(radius: 5)
-            }
-            
-            // Button with Icon
-            Button(action: {
-                print("Button with icon tapped!")
-            }) {
-                HStack {
-                    Image(systemName: "heart.fill")
-                    Text("Like")
-                }
-                .padding()
-                .background(Color.red.opacity(0.8))
-                .foregroundColor(.white)
-                .cornerRadius(8)
-            }
-        }
-        .padding()
-    }
+                    .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                    .shadow(color: .gray.opacity(0.4), rad
 
 }
 
