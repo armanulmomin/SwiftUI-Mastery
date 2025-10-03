@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TextViewBootcamp: View {
     var body: some View {
-        Text("Hello, World! This is a textview practise app while learning SwiftUI")
+        Text("Hello, World! This is a textview practise app while learning SwiftUIHello, World! This is a textview practise app while learning SwiftUIHello, World! This is a textview practise app while learning SwiftUIHello, World! This is a textview practise app while learning SwiftUIHello, World! This is a textview practise app while learning SwiftUIHello, World! This is a textview practise app while learning SwiftUI")
             .font(.body)
             .fontWeight(.bold)
             .italic()
