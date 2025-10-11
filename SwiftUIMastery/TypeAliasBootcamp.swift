@@ -34,11 +34,11 @@ struct TypeAliasBootcamp: View {
             HStack {
                 Button("Increase") {
                     item.count += 1
-                    message = "You increased the count!"
+                    message = "You increased the count once!"
                 }
                 .buttonStyle(.borderedProminent)
                 
-                Button("Reset") {
+                Button("Reset Button") {
                     item.count = 0
                     message = "Count reset."
                 }
