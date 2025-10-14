@@ -52,6 +52,12 @@ struct TypeAliasBootcamp: View {
                 .buttonStyle(.bordered)
             }
             
+            
+            
+            
+            
+            
+            
             if !message.isEmpty {
                 Text(message)
                     .foregroundColor(.green)
