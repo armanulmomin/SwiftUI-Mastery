@@ -31,6 +31,11 @@ class EscapingViewModel: ObservableObject {
 struct DownloadResult{
     let data: String
 }
+
+
+
+
+
 typealias downloadFormation = (DownloadResult) -> ()
 
 struct EscapingBootcamp: View {
