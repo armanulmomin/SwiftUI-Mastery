@@ -43,6 +43,9 @@ struct ShapesBootcamp: View {
                 path.closeSubpath()
             } // custom triangle
 
+            
+            
+            
             Capsule(style: .continuous)
             RoundedRectangle(cornerRadius: 50, style: .continuous)
             Path { path in
