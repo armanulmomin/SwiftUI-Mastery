@@ -46,6 +46,11 @@ struct ShapesBootcamp: View {
             
             
             
+            
+            
+            
+            
+            
             Capsule(style: .continuous)
             RoundedRectangle(cornerRadius: 50, style: .continuous)
             Path { path in
