@@ -38,11 +38,18 @@ struct ShapesBootcamp: View {
             Capsule()
             Path { path in
                 path.move(to: CGPoint(x: 20, y: 20))
+             
+                
+                
                 path.addLine(to: CGPoint(x: 100, y: 20))
                 path.addLine(to: CGPoint(x: 60, y: 80))
                 path.closeSubpath()
             } // custom triangle
 
+            
+            
+            
+            
             
             
             
