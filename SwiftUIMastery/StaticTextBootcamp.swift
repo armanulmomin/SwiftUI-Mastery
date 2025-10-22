@@ -25,6 +25,9 @@ struct StaticTextBootcamp: View {
         Text("This is a longer text view, which needs couple of lines and i am going to use line limit to figure it out what i can do it while keeping the view compact with the help of lineLimit along with using frame.This is a longer text view, which needs couple of lines and i am going to use line limit to figure it out what i can do it while keeping the view compact with the help of lineLimit along with using frame.
         ")
         
+           
+            
+            
             .fontWidth(.compressed)
             .frame(width: 300)
             .lineSpacing(50)

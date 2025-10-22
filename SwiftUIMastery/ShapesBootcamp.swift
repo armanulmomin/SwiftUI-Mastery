@@ -41,7 +41,10 @@ struct ShapesBootcamp: View {
              
                 
                 
-                path.addLine(to: CGPoint(x: 100, y: 20))
+                path.addLine(to: CGPoint(x: 100, y:
+                                            
+                                            
+                                            20))
                 path.addLine(to: CGPoint(x: 60, y: 80))
                 path.closeSubpath()
             } // custom triangle
