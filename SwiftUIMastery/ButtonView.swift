@@ -36,7 +36,7 @@ struct ButtonView: View {
                     )
                     .foregroundColor(.white)
                     .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
-                    .shadow(color: .gray.opacity(0.4), rad
+                    .shadow(color: .gray.opacity(0.4)
 
 }
 
