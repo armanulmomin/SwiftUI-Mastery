@@ -1,12 +1,9 @@
 import UIKit
+import Foundation
 
-var greeting = "Hello, playground"
-print(greeting.isEmpty)
-print(greeting.count)
-print(greeting.isEmpty)
-print(greeting.count)print(greeting.isEmpty)
-print(greeting.count)print(greeting.isEmpty)
-print(greeting.count)print(greeting.isEmpty)
-print(greeting.count)print(greeting.isEmpty)
-print(greeting.count)
+let square = sqrt(4.0)
+let power = pow(2.0, 2.0)
+let maximum = (square, power)
+
+// String
 
