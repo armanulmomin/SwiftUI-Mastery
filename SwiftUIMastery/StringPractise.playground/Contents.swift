@@ -6,4 +6,5 @@ let power = pow(2.0, 2.0)
 let maximum = (square, power)
 
 // String
-
+let name = "Practise"
+print(name.startIndex)
