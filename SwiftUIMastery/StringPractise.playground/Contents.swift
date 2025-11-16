@@ -8,3 +8,5 @@ let maximum = (square, power)
 // String
 let name = "Practise"
 print(name.startIndex)
+print(name.endIndex)
+
