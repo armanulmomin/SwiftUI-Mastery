@@ -29,7 +29,10 @@ repeat {
     print("trying payment")
 } while payment == false
 
-
+var payment = false
+repeat {
+    print("payment successful")
+} while payment == false
 
 
 
