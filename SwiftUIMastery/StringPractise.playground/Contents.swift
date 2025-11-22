@@ -34,6 +34,10 @@ repeat {
     print("payment successful")
 } while payment == false
 
+var payment = false
+repeat {
+    print("payment ongoing")
+} while payment == false
 
 
 
