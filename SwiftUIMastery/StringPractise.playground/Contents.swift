@@ -24,6 +24,9 @@ while distance > 0 {
     distance -= 1
 }
 
+
+
+
 var payment = false
 repeat {
     print("trying payment")
